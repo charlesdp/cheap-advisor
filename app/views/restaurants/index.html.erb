@@ -1,1 +1,9 @@
 <h1> Some cool restaurants </h1>
+
+<h3> <%= @restaurants.count %> </h3>
+
+<ul>
+  <% @restaurants.each do |restaurant| %>
+    <li> <%= restaurant[:name] %>, <%= restaurant[:address] %>, <%= restaurant[:category] %> </li>
+  <% end %>
+</ul>
