@@ -1,3 +1,9 @@
 <h1> Welcome to Cheap Advisor </h1>
 
 Time is: <%= Time.now %>
+
+<ul>
+  <% @categories.each do |category| %>
+    <li> <%= category %> </li>
+  <% end %>
+</ul>
